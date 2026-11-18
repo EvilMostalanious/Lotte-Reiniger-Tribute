@@ -1,0 +1,234 @@
+/* Things I'd like to fix::
+- Pictures getting very small as you size down the page
+- The film grid having links without <a> (ideally I'd like that the links just be the background image, and the text for what movie it is pops up on hover)
+- The film grid becoming uneven rows as you resize the window 
+- How to get the footer cover to go all the way across the page*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+h1 {
+    font-family: "Uncial Antiqua", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(64, 160, 228); */
+    background-color: rgb(212, 239, 38);
+}
+
+.nav-bar a {
+    color: black;
+}
+
+.nav-bar li {
+    margin: 0.5rem;
+    margin-inline: 8rem;
+}
+
+.header-stick {
+    position: sticky;
+    top: 0;
+    min-width: 100%;
+}
+
+main {
+    background-color: rgb(64, 160, 228);
+}
+
+.container {
+    display: flex;
+    object-fit: cover;
+}
+
+.container div {
+    margin-bottom: 0rem;
+}
+
+.container img {
+    background-color: rgb(212, 239, 38);
+    padding: 2rem;
+    min-width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* border-radius: 10%; */
+}
+
+.container h1 {
+    background-color: rgb(212, 239, 38);
+    /* border-radius: 10%; */
+}
+
+.container p {
+    padding: 2rem;
+    min-width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.landing {
+    background-color: rgb(212, 239, 38);
+}
+
+.intro {
+    max-width: 50%;
+    height:auto;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio {
+    background-color: rgb(64, 160, 228);
+    background-image: url(images/bio_background.webp);
+    background-size: cover;
+    background-position: 50%;
+    background-blend-mode: screen;
+}
+
+.intro h1 {
+    background-color: rgb(212, 239, 38);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.intro p {
+    font-size: 18px; 
+    padding: 2rem;  
+}
+
+.life {
+    background-color: rgb(77, 210, 19);
+}
+
+.achmed-text a {
+    color: #f19915;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#the-multiplane {
+    background-color: #f19915;
+}
+
+#the-multiplane img {
+    background-color: rgb(77, 210, 19);
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+#the-multiplane p {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+.multiplane-sec {
+   display: flex;
+    justify-content: center;
+}
+
+.multiplane-sec h1 {
+   background-color: rgb(77, 210, 19);
+   padding-inline: 50px;
+}
+
+.film-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.thumbnail {
+    background-color: green;
+    background-position: 50%;
+    min-width: 33%;
+    min-height: 100px;
+    border: color=#272727 solid 1px;
+    margin: 0.5px;
+    background-size: contain;
+}
+
+.thumbnail:hover {
+    background-size: 110%;
+}
+
+.thumbnail a {
+    background-color: rgb(212, 239, 38);
+    color:#000000;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* Why doesn't this ^^^^ put it in the middle of the thumbnail? */
+
+}
+
+.thumbnail a:hover {
+    color: rgb(28, 143, 238);
+}
+
+
+.tn1 {
+    background-image: url(images/das-ornament.jpg);
+}
+
+.tn2 {
+    background-image: url(images/achmed_background.avif);
+}
+
+.tn3 {
+    background-image: url(images/papageno.jpg);
+}
+
+.tn4 {
+    background-image: url(images/star-of-belhem.png);
+}
+
+.tn5 {
+    background-image: url(images/the-magic-horse-bg.jpg);
+}
+
+.tn6 {
+    background-image: url(images/cinderella-bg.jpg);
+}
+
+footer {
+    background-color: rgb(212, 239, 38);
+    background-position: cover;
+    font-family: "Uncial Antiqua", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 3rem;
+}
